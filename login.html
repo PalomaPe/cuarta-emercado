@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="google-signin-client_id"
+        content="349945855178-el2pft8i9nf5pdeniuv5jf82r5h9rind.apps.googleusercontent.com">
+    <meta charset="UTF-8">
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/album/">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet" </head> <body>
+    <nav class="navbar navbar-dark navbar-expand-lg site-header   sticky-top py-1 bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="categories.html">Categorías</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sell.html">Vender</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">Mi carrito</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Ingresar</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div id="nombreEnPantalla"></div>
+    </body>
+    <main role="main" class="pb-5">
+        <div class="text-center p-4">
+            <h2>Autenticarse</h2>
+            <p class="lead">Complete los campos.</p>
+        </div>
+    </main>
+    <center>
+        <div class="box" id="loginbox">
+            <form action="index.html" method="get">
+                <input class="ingreso form-control" style="width:270px" id="email_input" placeholder="e-mail o usuario" required>
+                <br/>
+                <input class="ingreso form-control" style="width:270px" id="password_input" placeholder="contraseña" required>
+                <br/>
+                <p>
+                    <input type="submit" value="Ingresar" class="boton" onclick="adjuntarNombre(); tomarDatos();">
+                </p>
+            </form>
+            <a class="g-signin2" data-onsuccess="onSignIn" onclick="agregarBotonSignOut()"></a>
+            <a href="index.html" class="nav-link" onclick="signOut();" id="botonSignOut" style="display:none">Sign out</a>
+        </div>
+    </center>
+    <footer class="text-muted">
+        <div class="container">
+            <p>Este sitio forma parte de Programación Aplicada - JAP</p>
+            <p>Clickea <a target="_blank" href="Letra.pdf">aquí</a> para descargar la letra del obligatorio.</p>
+        </div>
+    </footer>
+    <script src="js/vendor/jquery-3.4.1.min.js"></script>
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://apis.google.com/js/platform.js?onload=init" async defer></script>
+
+</html>

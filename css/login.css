@@ -1,0 +1,9 @@
+div.box {
+    width: 400px;
+    padding: 40px;
+    border: 2px solid rgb(214, 28, 108);
+}
+
+.boton:hover {
+    color:  rgb(214, 28, 108);
+}
